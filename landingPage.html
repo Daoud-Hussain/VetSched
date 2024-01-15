@@ -1,36 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Assets/landingPage.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Assets/landingPage.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <title>Pet Care</title>
-</head>
-<body>
-
-<div class="navbar">
-    <div class="logo">
-        <img src="Images/logo.png" alt="Logo">
-    </div>
-    <div class="nav-links">
-        <a href="#">Home</a>
-        <a href="#">About</a>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <a href="#home"><img src="Images/logo.png" alt="Logo" /></a>
+      </div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
         <a href="#">Services</a>
         <a href="#">Reviews</a>
         <a href="#">Contact Us</a>
-    </div>
-    <div class="right-links">
+      </div>
+      <div class="right-links">
         <a href="#">Login</a>
         <button class="join-now-btn">Join Now</button>
-		<button class="toggle-btn" onclick="toggleMenu()">
-            &#9776;
-        </button>
+        <button class="toggle-btn" onclick="toggleMenu()">&#9776;</button>
+      </div>
     </div>
-</div>
 
-<script src="Javascript/main.js"></script>
-</body>
+    <section class="home-section" id="home">
+      <div class="home-content">
+        <div class="text">
+          <h1 class="heading">
+            Pet Care
+            <span style="color: #3fabf3; font-weight: 900">Simplified</span>
+          </h1>
+          <p class="para">
+            Discover a wide array of pawsitive services, from pet boarding,
+            sitting, and grooming to trusted veterinarians and luxurious pet
+            resorts.
+          </p>
+          <button class="primary-btn">Learn More</button>
+        </div>
+        <div>
+          <img class="image" src="images/home-img.png" alt="Home Image" />
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-content">
+        <div>
+          <img
+            class="about-image"
+            src="images/about-img.png"
+            alt="About Image"
+          />
+        </div>
+        <div class="text">
+          <h1 class="about-heading">
+            Your Pet's Health Made Simple with VetSched.Pet - Schedule, Track,
+            and Care!
+          </h1>
+          <p class="para">
+            At VetSched.pet, we are committed to making pet care simpler and
+            stress-free for pet parents. Our platform offers an easy-to-use
+            interface, seamless appointment scheduling, and reliable reminders
+            to help pet parents prioritize their pet's health. With
+            VetSched.pet, you can be confident that your furry friend is
+            receiving the best possible care.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script src="Javascript/main.js"></script>
+  </body>
 </html>
