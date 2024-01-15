@@ -4,7 +4,6 @@
     --primary-hover-color: #3FABF3;
     --button-bg-color: #3FABF3;
     --button-border-color: #3FABF3;
-    --button-text-color: #FFF9F2;
     --paragraph-text-color: #555;
 }
 
@@ -46,7 +45,7 @@ body {
 .nav-links a {
     text-decoration: none;
     color: var(--primary-text-color);
-    padding: 15px;
+    padding: 10px 15px;
     font-weight: 700;
 }
 
@@ -54,7 +53,7 @@ body {
 .right-links a:hover {
     background-color: var(--primary-hover-color);
     border-radius: 10px;
-    color: var(--button-text-color);
+    color: var(--main-bg-color);
 }
 
 .right-links .toggle-btn {
@@ -72,7 +71,7 @@ body {
     color: var(--primary-text-color);
     margin-right: 15px;
     font-weight: 700;
-    padding: 15px;
+    padding: 10px 15px;
 }
 
 .join-now-btn {
@@ -88,7 +87,7 @@ body {
 .join-now-btn:hover {
     background-color: var(--button-bg-color);
     cursor: pointer;
-    color: var(--button-text-color);
+    color: var(--main-bg-color);
 }
 
 .toggle-btn {
@@ -109,9 +108,19 @@ body {
     align-items: center;
 }
 
+.paw-image {
+    width: 102px;
+    /* background: red; */
+    margin-top: 10px;
+    padding-bottom: 0px;
+    padding: 0;
+    margin-right: 10px;
+}
+
 .text {
-    margin-bottom: 18px;
+    /* margin-bottom: 18px; */
     max-width: 40%;
+    margin-left: 5%;
 }
 
 .heading {
@@ -133,7 +142,7 @@ body {
     cursor: pointer;
     border-radius: 10px;
     font-weight: 700;
-    color: var(--button-text-color);
+    color: var(--main-bg-color);
     margin-top: 10px;
 }
 
@@ -167,6 +176,67 @@ body {
     margin-bottom: 30px;
 }
 
+.main-heading {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2.5em;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 15vw;
+    border: 1px solid var(--paragraph-text-color);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    align-self: center;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-img {
+    width: 20px;
+    height: 20px;
+    transform: rotate(30deg);
+    margin-top: 5px;
+}
+
+.card-para {
+    font-size: 13px;
+    color: var(--paragraph-text-color);
+    /* background: red; */
+}
+.services{
+    padding-top: 25px;
+}
+.services-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 10%;
+}
+.left, .right{
+    padding: 25px;
+    max-width: 20%;
+}
+.middle{
+    max-width: 50%;
+    margin-top: 15%;
+    align-items: center;
+}
+.middle-img{
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+.middle .card{
+    margin-left: 28%;
+}
+
 @media screen and (max-width: 768px) {
     .nav-links {
         display: none;
@@ -187,6 +257,11 @@ body {
     .nav-links a {
         padding: 10px;
         text-align: center;
+    }
+
+    .nav-links a:hover {
+        background-color: var(--main-bg-color);
+        color: var(--paragraph-text-color);
     }
 
     .right-links {
