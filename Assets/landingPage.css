@@ -92,6 +92,7 @@ body {
 
 .toggle-btn {
     display: none;
+    padding: 10px 15px;
 }
 
 .home-section {
@@ -110,7 +111,6 @@ body {
 
 .paw-image {
     width: 102px;
-    /* background: red; */
     margin-top: 10px;
     padding-bottom: 0px;
     padding: 0;
@@ -118,7 +118,6 @@ body {
 }
 
 .text {
-    /* margin-bottom: 18px; */
     max-width: 40%;
     margin-left: 5%;
 }
@@ -152,7 +151,6 @@ body {
     cursor: pointer;
     background-color: var(--main-bg-color);
 }
-
 .image,
 .about-image {
     max-width: 80%;
@@ -172,7 +170,7 @@ body {
 }
 
 .about-section {
-    padding-top: 45px;
+    padding-top: 6%;
     margin-bottom: 30px;
 }
 
@@ -180,6 +178,7 @@ body {
     text-align: center;
     font-weight: bolder;
     font-size: 2.5em;
+    padding: 25px 0px;
 }
 
 .card {
@@ -211,29 +210,28 @@ body {
 .card-para {
     font-size: 13px;
     color: var(--paragraph-text-color);
-    /* background: red; */
 }
 .services{
-    padding-top: 25px;
+    padding-top: 5%;
 }
 .services-section{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 20px 10%;
+
 }
 .left, .right{
-    padding: 0 25px;
-    max-width: 20%;
+    width: 30%;
 }
 .middle{
-    max-width: 50%;
+    width: 40%;
     align-items: center;
 }
 .middle-img{
     width: 100%;
-    margin-bottom: 10%;
-    margin-top: 10%;
+    height: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 @media screen and (max-width: 768px) {
     .nav-links {
@@ -264,18 +262,21 @@ body {
 
     .right-links {
         margin-top: 10px;
+        font-size: 15px;
+        padding: 0px 4px;
     }
 
     .right-links .toggle-btn {
         display: block;
-        font-size: 25px;
+        font-size: 20px;
         cursor: pointer;
         background: none;
         border: none;
         color: var(--primary-text-color);
-        margin-left: 5px;
     }
-
+    .image{
+        padding-top: 5%;
+    }
     .button {
         padding: 3px;
     }
@@ -307,16 +308,21 @@ body {
         color: var(--paragraph-text-color);
         padding: 5px;
     }
+    .services{
+        padding-top: 0px;
+
+    }
     .services-section{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        /* margin: 20px 10%; */
         
     }
     .left, .right, .middle{
-        min-width: 95%;
-        margin-right: 5%;
+        width: 100%;
+    }
+    .middle-img{
+        margin: 0px auto;
     }
     .card {
         flex-direction: column;
@@ -325,10 +331,5 @@ body {
         align-self: center;
         align-items: center;
     }
-    .middle-img{
-        margin-left: 5%;
-    }
-    .middle .card{
-        display: none;
-    }
+    
 }
