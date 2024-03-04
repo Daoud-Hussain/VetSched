@@ -149,6 +149,7 @@ body {
     box-shadow: 0 2px 4px 0 var(--button-bg-color), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+
 .home-buttons button:hover {
     cursor: pointer;
 }
@@ -369,6 +370,92 @@ body {
     height: auto;
 }
 
+.btn-container {
+    text-align: center;
+}
+
+.services-btn {
+    margin: 0 auto;
+    height: auto;
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: none;
+    font-size: 0.9em;
+    font-weight: 500;
+    background: var(--button-bg-color);
+    box-shadow: 0 2px 4px 0 var(--button-bg-color), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.services-btn:hover {
+    cursor: pointer;
+    color: var(--button-bg-color);
+    background: var(--main-bg-color);
+    border: 1px solid var(--button-bg-color);
+}
+
+.text {
+    max-width: 40%;
+    margin-left: 5%;
+}
+
+.home-content,
+.about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.heading {
+    font-size: 3em;
+    max-width: 60%;
+}
+
+.para {
+    font-size: 1em;
+    color: var(--primary-text-color);
+    padding: 5px;
+}
+
+.primary-btn {
+    padding: 10px 20px;
+    background-color: var(--button-bg-color);
+    border: 2px solid var(--button-bg-color);
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 700;
+    color: var(--main-bg-color);
+    margin-top: 10px;
+}
+
+.primary-btn:hover {
+    color: var(--button-bg-color);
+    border: 2px solid var(--button-bg-color);
+    cursor: pointer;
+    background-color: var(--main-bg-color);
+}
+
+.image,
+.about-image {
+    max-width: 80%;
+    height: auto;
+    margin-left: 10%;
+}
+
+.about-heading {
+    max-width: 80%;
+    font-size: 2em;
+    font-weight: 900;
+}
+
+.about-image {
+    background-color: var(--button-bg-color);
+    border-radius: 25px;
+}
+
+.about-section {
+    padding-top: 6%;
+    margin-bottom: 30px;
+}
 
 @media screen and (max-width: 768px) {
     .nav-links {
@@ -495,6 +582,29 @@ body {
         width: 80%;
         height: 80%;
     }
+    .about-content {
+        flex-direction: column;
+    }
+
+    .text {
+        text-align: left;
+        min-width: 80%;
+    }
+
+    .about-heading {
+        font-size: 2em;
+        font-weight: 900;
+        padding-top: 25px;
+        min-width: 90%;
+    }
+
+    .para {
+        font-size: 20px;
+        color: var(--paragraph-text-color);
+        padding: 5px;
+    }
+
+    
 }
 
 
@@ -519,6 +629,12 @@ body {
         font-size: 0.8em;
         padding-top: 10px;
         max-width: 90%;
+    }
+
+    .services-btn {
+        padding: 7px 15px;
+        font-size: 0.7em;
+
     }
 
 
