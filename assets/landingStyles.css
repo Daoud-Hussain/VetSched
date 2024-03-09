@@ -479,6 +479,9 @@ body {
     align-items: center;
     justify-content: center;
     margin-bottom: 10rem;
+    object-fit: cover;
+    background-color: rgba(252, 238, 213, 1);
+    background-repeat: no-repeat;
 }
 
 .banner-content {
