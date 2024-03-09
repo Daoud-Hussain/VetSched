@@ -18,63 +18,66 @@
   </head>
 
   <body>
-    <div class="navbar">
-      <div class="logo">
-        <a href="#home"><img src="Images/home-logo.png" alt="Logo" /></a>
-      </div>
-      <div class="nav-links">
-        <div class="dropdown">
-          <a href="#" class="dropbtn"
-            >Solutions <i class="fas fa-chevron-down"></i
-          ></a>
-          <div class="dropdown-content">
-            <a href="#">Solution 1</a>
-            <a href="#">Solution 2</a>
-            <a href="#">Solution 3</a>
-            <a href="#">Solution 4</a>
-            <a href="#">Solution 5</a>
-          </div>
+    
+    <main class="home-bg">
+      <div class="navbar">
+        <div class="logo">
+          <a href="#home"><img src="Images/home-logo.png" alt="Logo" /></a>
         </div>
-        <a href="#services">Services</a>
-        <a href="#about">About US</a>
-        <a href="#faqs">FAQS</a>
-        <a href="#contact">Contact Us</a>
+        <div class="nav-links">
+          <div class="dropdown">
+            <a href="#" class="dropbtn"
+              >Solutions <i class="fas fa-chevron-down"></i
+            ></a>
+            <div class="dropdown-content">
+              <a href="#">Solution 1</a>
+              <a href="#">Solution 2</a>
+              <a href="#">Solution 3</a>
+              <a href="#">Solution 4</a>
+              <a href="#">Solution 5</a>
+            </div>
+          </div>
+          <a href="#services">Services</a>
+          <a href="#about">About US</a>
+          <a href="#faqs">FAQS</a>
+          <a href="#contact">Contact Us</a>
+        </div>
+        <div class="right-links">
+          <a href="#">Login</a>
+          <button class="join-now-btn">Join Now</button>
+          <button
+            class="toggle-btn"
+            style="color: #fff9f2"
+            onclick="toggleMenu()"
+          >
+            &#9776;
+          </button>
+        </div>
       </div>
-      <div class="right-links">
-        <a href="#">Login</a>
-        <button class="join-now-btn">Join Now</button>
-        <button
-          class="toggle-btn"
-          style="color: #fff9f2"
-          onclick="toggleMenu()"
-        >
-          &#9776;
-        </button>
-      </div>
-    </div>
-    <section class="homeSection">
-      <h1 class="home-heading">
-        Streamline Your Pet's Care Journey-
-        <span
-          style="
-            background: rgba(88, 158, 238, 0.548);
-            border-radius: 15px;
-            padding: 0 20px;
-          "
-          ;
-          >All Services, One Platform.</span
-        >
-      </h1>
-      <p class="home-para">
-        A platform to make pet care Journey easy through online Appointments,
-        Text Conversations, Reminders, detailed Pet profiles
-      </p>
-      <div class="home-buttons">
-        <button class="home-btn1">Explore Pet lover</button>
-        <button class="home-btn2">Explore Service Provider</button>
-      </div>
-    </section>
-    <section style="margin-bottom: 5%;">
+      <section class="homeSection">
+        <h1 class="home-heading">
+          Streamline Your Pet's Care Journey-
+          <span
+            style="
+              background: rgba(88, 158, 238, 0.548);
+              border-radius: 15px;
+              padding: 0 20px;
+            "
+            ;
+            >All Services, One Platform.</span
+          >
+        </h1>
+        <p class="home-para">
+          A platform to make pet care Journey easy through online Appointments,
+          Text Conversations, Reminders, detailed Pet profiles
+        </p>
+        <div class="home-buttons">
+          <button class="home-btn1">Explore Pet lover</button>
+          <button class="home-btn2">Explore Service Provider</button>
+        </div>
+      </section>
+    </main>
+    <section style="margin-bottom: 5%">
       <div class="home-cards">
         <div class="home-card" style="background: rgba(83, 152, 255, 1)">
           <img src="Images/top-service-provider.png" alt="Card Image" />
@@ -137,6 +140,97 @@
           <button class="join-now-btn home-card-button">Join Now</button>
         </div>
       </div>
+    </section>
+
+    <section class="services" id="services">
+      <h1 class="main-heading">Our Services</h1>
+      <main class="services-section">
+        <div class="left">
+          <div class="card card1">
+            <img src="Images/p-grooming.png" alt="">
+            <div class="card-header">
+              <img src="Images/paw.png" class="card-img" />
+              <h1>Pet Grooming</h1>
+            </div>
+          </div>
+          <div class="card card2">
+            <img src="Images/p-sitting.png" alt="">
+            <div class="card-header">
+              <img src="Images/paw.png" class="card-img" />
+              <h1>Pet Sittig/Walking</h1>
+            </div>
+            
+          </div>
+          <div class="card card3">
+            <img src="Images/p-cremation.png" alt="">
+            <div class="card-header">
+              <img src="Images/paw.png" class="card-img" />
+              <h1>Pet Cremation</h1>
+            </div>
+            
+          </div>
+        </div>
+        <div class="middle">
+          
+          <div class="card card7">
+            <img src="Images/p-transformation.png" alt="">
+            <div class="card-header">
+              <img src="Images/paw.png" class="card-img" />
+              <h1>Pet Transformation</h1>
+            </div>
+            
+          </div>
+
+          <img src="Images/p-center.png" class="middle-img" />
+
+          <div class="middle-cards">
+            <div class="card card8">
+              <img src="Images/p-resort.png" alt="">
+              <div class="card-header">
+                <img src="Images/paw.png" class="card-img" />
+                <h1>Pet Resort</h1>
+              </div>
+              
+            </div>
+
+            <div class="card card8">
+              <img src="Images/p-adoption.png" alt="">
+              <div class="card-header">
+                <img src="Images/paw.png" class="card-img" />
+                <h1>Pet Adoption</h1>
+              </div>
+              
+            </div>
+
+          </div>
+        </div>
+        <div class="right">
+          <div class="card card4">
+            <img src="Images/p-hospital.png" alt="">
+            <div class="card-header">
+              <img src="Images/paw.png" class="card-img" />
+              <h1>Pet Hospital</h1>
+            </div>
+            
+          </div>
+          <div class="card card5">
+            <img src="Images/veteriarian.png" alt="">
+            <div class="card-header">
+              <img src="Images/paw.png" class="card-img" />
+              <h1>Veterinarian</h1>
+            </div>
+            
+          </div>
+          <div class="card card6">
+            <img src="Images/p-training.png" alt="">
+            <div class="card-header">
+              <img src="Images/paw.png" class="card-img" />
+              <h1>Pet Training</h1>
+            </div>
+            
+          </div>
+        </div>
+      </main>
     </section>
 
     <script src="Javascript/main.js"></script>
