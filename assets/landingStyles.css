@@ -25,11 +25,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0px 5%;
-    /* right: 0;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    position: fixed; */
     font-size: 1em;
     font-weight: 500;
     background: none;
@@ -98,7 +93,6 @@ body {
     background-color: var(--main-bg-color);
     cursor: pointer;
     color: var(--button-bg-color);
-    /* border: 1px solid var(--button-bg-color); */
 }
 
 .toggle-btn {
@@ -106,7 +100,7 @@ body {
     padding: 10px 15px;
 }
 
-.home-bg{
+.home-bg {
     background-image: url('../Images/background.png');
     height: 100vh;
 }
@@ -204,13 +198,13 @@ body {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-.home-cards{
+
+.home-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     height: auto;
     margin-top: -10vh;
-    /* background: tomato; */
 }
 
 .home-card {
@@ -236,6 +230,7 @@ body {
     width: 90%;
     min-height: 50%;
 }
+
 .home-card-content p {
     color: rgba(43, 128, 255, 1);
 }
@@ -249,40 +244,37 @@ body {
     cursor: pointer;
     font-size: 0.7em;
 }
-.home-card-button:hover{
+
+.home-card-button:hover {
     background-color: #FFF9F2;
     cursor: pointer;
     border: 1px solid rgba(43, 128, 255, 1);
 }
-/* 
-.home-card-button:hover {
-    background-color: #0056b3;
-} */
 
-@media screen and (max-width: 768px) {
-    .home-heading {
-        font-size: 2em;
-    }
 
-    .home-para {
-        padding: 10px;
-        font-size: 1em;
-    }
+.services-header {
+    font-weight: bolder;
+    font-size: 1.7em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2%;
 }
 
-.main-heading {
-    text-align: center;
-    font-weight: bolder;
-    font-size: 2.5em;
-    padding: 25px 0px;
+.underlined {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.services .underlined {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    max-width: 13vw;
-    border: 1px solid var(--button-bg-color);
-    border-radius: 10px;
+    max-width: 14vw;
     margin-bottom: 20px;
     padding: 12px 0px;
     align-self: center;
@@ -295,15 +287,17 @@ body {
     flex-direction: row;
     font-size: 0.7em;
     font-weight: 500;
-    /* text-align: center; */
     margin: 0 auto;
+}
+
+.card-header h1 {
+    margin-left: 5px;
 }
 
 .card-img {
     width: 20px;
     height: 20px;
-    transform: rotate(30deg);
-    margin-top: 5px;
+    align-self: center;
 }
 
 .card-para {
@@ -325,53 +319,54 @@ body {
 .left,
 .right {
     width: 20%;
-    background: teal;
 }
-.card1{
+
+.card1 {
     margin-left: 35%;
 }
-.card2{
+
+.card2 {
     margin-left: 20%;
 }
 
-.card3{
+.card3 {
     margin-left: 25%;
 }
-.card4{
+
+.card4 {
     margin-right: 35%;
 }
-.card5{
+
+.card5 {
     margin-right: 20%;
 }
-.card6{
+
+.card6 {
     margin-right: 25%;
 }
-.card8{
+
+.card8 {
     width: 50%;
-    background: yellowgreen;
 }
 
-.card img{
-    /* max-width: 7em; */
+.card img {
     margin: 0 auto;
 }
 
 .middle {
     width: 30%;
     align-items: center;
-    background: tomato;
 }
-.middle-cards{
-    /* margin-top: 5%; */
+
+.middle-cards {
     display: flex;
     width: 100%;
-    background: darkblue;
 }
+
 .middle-img {
+    margin-top: -10px;
     width: 100%;
     height: auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
 }
 
 
@@ -422,7 +417,8 @@ body {
         border: none;
         color: var(--primary-text-color);
     }
-    .homeSection{
+
+    .homeSection {
         height: 80%;
     }
 
@@ -433,6 +429,7 @@ body {
     .home-para {
         font-size: 1em;
     }
+
     .services {
         padding-top: 0px;
 
@@ -462,16 +459,42 @@ body {
         align-self: center;
         align-items: center;
     }
-    .middle-cards{
+
+    .middle-cards {
         flex-direction: column;
     }
-    .card1, .card2, .card3, .card4, .card5, .card6, .card8 {
+
+    .card1,
+    .card2,
+    .card3,
+    .card4,
+    .card5,
+    .card6,
+    .card8 {
         margin: 20px auto;
     }
-    .middle-img{
+
+    .middle-img {
         margin: 0 auto;
     }
 
+    .home-heading {
+        font-size: 2em;
+    }
+
+    .home-para {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    .services-header {
+        font-size: 1.3em;
+    }
+
+    .underlined {
+        width: 80%;
+        height: 80%;
+    }
 }
 
 
@@ -481,7 +504,8 @@ body {
         min-width: 90%;
 
     }
-    .logo{
+
+    .logo {
         width: 6em;
     }
 
@@ -496,15 +520,16 @@ body {
         padding-top: 10px;
         max-width: 90%;
     }
-    
+
 
 }
 
 @media screen and (max-width: 400px) {
-    .right-links{
+    .right-links {
         font-size: 0.6em;
     }
-    .logo{
+
+    .logo {
         width: 5em;
     }
 
