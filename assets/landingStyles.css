@@ -398,11 +398,17 @@ body {
     flex-direction: column;
     align-items: flex-end;
 }
-.why-text{
+
+.why-text {
     align-items: flex-start;
+    justify-content: center;
+    padding-left: 10%;
+    width: 50%;
 }
-.why-container{
-    text-align: center;
+
+.why-container {
+    width: 50%;
+    text-align: end;
 }
 
 .about-content {
@@ -478,13 +484,11 @@ body {
 .banner {
     margin-top: 5%;
     background: url("../Images/Banner.png");
-    height: 75vh;
     padding-left: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10rem;
     object-fit: cover;
     background-color: rgba(252, 238, 213, 1);
     background-repeat: no-repeat;
@@ -587,7 +591,8 @@ body {
         padding-left: 0px;
         margin-top: 0;
         margin-bottom: 0;
-        max-height: 60vh;
+        overflow-x: hidden;
+        padding: 5% 0;
     }
 
     .banner-content {
@@ -647,7 +652,6 @@ body {
 
     .about-buttons {
         min-width: 94%;
-
     }
 
     .para {
@@ -658,11 +662,26 @@ body {
         min-width: 94%;
     }
 
+    .why-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .why-text {
+        justify-content: center;
+        max-width: 90%;
+        overflow-x: hidden;
+    }
+
 }
 
 
 
 @media screen and (max-width: 768px) {
+    * {
+        overflow-x: visible;
+    }
+
     .nav-links {
         display: none;
         flex-direction: column;
@@ -832,20 +851,20 @@ body {
 
     .home-buttons {
         flex-direction: column;
-        font-size: 0.8em;
+        font-size: 0.9em;
         padding-top: 10px;
         max-width: 90%;
     }
 
+    .btn-container {
+        text-align: center;
+    }
+
     .services-btn {
-        padding: 7px 15px;
-        font-size: 0.7em;
-
+        font-size: 0.9em;
     }
 
-    .banner {
-        min-height: 65vh;
-    }
+
 
 
 }
