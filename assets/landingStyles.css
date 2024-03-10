@@ -398,6 +398,12 @@ body {
     flex-direction: column;
     align-items: flex-end;
 }
+.why-text{
+    align-items: flex-start;
+}
+.why-container{
+    text-align: center;
+}
 
 .about-content {
     display: flex;
