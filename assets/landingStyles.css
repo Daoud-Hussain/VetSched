@@ -558,8 +558,9 @@ body {
     margin: 0 auto;
     max-width: 80%;
     font-family: 'Poppins', sans-serif;
-    font-weight: 300;
     color: rgba(61, 68, 97, 1);
+    font-size: 0.9em;
+    font-weight: 300;
 }
 
 .faq {
@@ -592,6 +593,7 @@ body {
 
 .faq-title {
     margin: 0 35px 0 0;
+    font-size: 0.9em;
 }
 
 .faq-text {
@@ -613,7 +615,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 16px;
     padding: 0;
     position: absolute;
     top: 30px;
@@ -657,9 +658,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 110vh;
     background: rgba(61, 68, 97, 0.84);
     margin-top: 5%;
+    padding: 4% 0 ;
 }
 
 .heading {
@@ -696,7 +697,7 @@ body {
 }
 
 .stars {
-    color: #ffd700;
+    color: rgba(245, 185, 114, 1);
     margin-bottom: 10px;
 }
 
@@ -784,16 +785,13 @@ p {
     .banner-buttons {
         padding-left: 20%;
     }
-
-    .review-container {
-        height: 200vh;
-        background: rgba(61, 68, 97, 0.84);
-        margin-top: 5%;
-    }
-
     .review-card {
-        width: 30%;
+        width: 40%;
     }
+    .review-container{
+        padding: 7% 0;
+    }
+
 }
 
 @media screen and (max-width: 992px) {
@@ -1006,7 +1004,7 @@ p {
     .banner-buttons {
         padding-left: 10%;
     }
-
+    
 
 }
 
@@ -1045,18 +1043,15 @@ p {
     .ask-us-btn{
         padding: 10px 40px;
     }
-    .review-container {
-        height: 300vh;
-        background: rgba(61, 68, 97, 0.84);
-        margin-top: 5%;
-    }
-
+    
     .review-card {
-        min-width: 70%;
-        /* background: red; */
+        width: 75%;
     }
     .special-card{
         margin-top: 0;
+    }
+    .review-container{
+        padding: 10% 0;
     }
 
 }
@@ -1097,10 +1092,5 @@ p {
     .banner ul {
         font-size: 1em;
         padding-left: 10%;
-    }
-    .review-container {
-        height: 270vh;
-        background: rgba(61, 68, 97, 0.84);
-        margin-top: 5%;
     }
 }
