@@ -129,6 +129,8 @@ body {
     text-align: center;
     max-width: 68%;
     font-size: 1.45em;
+    color: rgba(255, 255, 255, 1);
+    ;
 }
 
 .home-buttons {
@@ -209,8 +211,8 @@ body {
 }
 
 .home-card {
-    width: 14em;
-    height: 15em;
+    width: 11em;
+    height: 12em;
     padding: 16px;
     border-left: 5px solid rgba(43, 128, 255, 1);
     border-radius: 10px;
@@ -229,7 +231,8 @@ body {
 .home-card-content {
     font-size: 1.22em;
     width: 90%;
-    min-height: 50%;
+    /* background: teal; */
+    min-height: 40%;
 }
 
 .home-card-content p {
@@ -387,9 +390,6 @@ body {
 
 .services-btn:hover {
     cursor: pointer;
-    color: var(--button-bg-color);
-    background: var(--main-bg-color);
-    border: 1px solid var(--button-bg-color);
 }
 
 .text {
@@ -496,6 +496,7 @@ body {
 
 .banner-content {
     max-width: 95%;
+    padding: 5% 0;
 }
 
 .banner-head {
@@ -647,7 +648,7 @@ body {
     display: none;
 }
 
-.ask-us-btn{
+.ask-us-btn {
     padding: 10px 70px;
 }
 
@@ -660,7 +661,7 @@ body {
     align-items: center;
     background: rgba(61, 68, 97, 0.84);
     margin-top: 5%;
-    padding: 4% 0 ;
+    padding: 4% 0;
 }
 
 .heading {
@@ -670,9 +671,11 @@ body {
     color: #fff;
     font-weight: 600;
 }
-.special-card{
+
+.special-card {
     margin-top: 50px;
 }
+
 .review-cards {
     display: flex;
     flex-wrap: wrap;
@@ -759,6 +762,7 @@ p {
     .banner-content {
         min-width: 100%;
         text-align: left;
+        padding: 0;
     }
 
     .banner-head {
@@ -785,10 +789,12 @@ p {
     .banner-buttons {
         padding-left: 20%;
     }
+
     .review-card {
         width: 40%;
     }
-    .review-container{
+
+    .review-container {
         padding: 7% 0;
     }
 
@@ -1004,7 +1010,7 @@ p {
     .banner-buttons {
         padding-left: 10%;
     }
-    
+
 
 }
 
@@ -1040,17 +1046,19 @@ p {
         font-size: 0.9em;
     }
 
-    .ask-us-btn{
+    .ask-us-btn {
         padding: 10px 40px;
     }
-    
+
     .review-card {
         width: 75%;
     }
-    .special-card{
+
+    .special-card {
         margin-top: 0;
     }
-    .review-container{
+
+    .review-container {
         padding: 10% 0;
     }
 
