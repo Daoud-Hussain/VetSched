@@ -548,7 +548,7 @@ body {
 }
 
 
-h1 {
+.Faq-head {
     margin: 50px 0 30px;
     text-align: center;
     color: rgba(61, 68, 97, 1);
@@ -564,25 +564,18 @@ h1 {
 
 .faq {
     background-color: transparent;
-    /* background: #000; */
-    /* border-top: 1px solid rgba(255, 88, 81, 1); */
     border-bottom: 1px solid rgba(255, 88, 81, 1);
-    /* border-radius: 10px; */
     padding: 30px;
     position: relative;
     overflow: hidden;
     margin: 20px;
-    /* width: 80%; */
     transition: 0.3s ease;
 }
 
 
 .faq.active::after,
 .faq.active::before {
-    /* color: #2ecc71; */
     content: '\f075';
-    /* font-family: 'Font Awesome 5 Free'; */
-    /* font-size: 7rem; */
     position: absolute;
     opacity: 0.2;
     top: 20px;
@@ -653,7 +646,9 @@ h1 {
     display: none;
 }
 
-
+.ask-us-btn{
+    padding: 10px 70px;
+}
 
 
 
@@ -993,8 +988,9 @@ h1 {
         font-size: 0.9em;
     }
 
-
-
+    .ask-us-btn{
+        padding: 10px 40px;
+    }
 
 }
 
